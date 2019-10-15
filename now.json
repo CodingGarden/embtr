@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "name": "embtr",
+  "builds": [
+    {
+      "src": "public/*",
+      "use": "@now/static"
+    },
+    {
+      "src": "src/app.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/scrape",
+      "dest": "src/app.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "public/$1"
+    }
+  ],
+  "alias": [
+    "embtr"
+  ]
+}
