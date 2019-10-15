@@ -2,6 +2,8 @@
 
 A simple website / scraper to get embeddable website preview cards.
 
+View the site [here](https://embtr.now.sh/)
+
 ## Setup
 
 ```sh
